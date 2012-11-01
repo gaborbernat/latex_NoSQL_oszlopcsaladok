@@ -1,0 +1,14 @@
+[1] Config.pm:357> INFO - This is Biber 1.2
+[2] Config.pm:360> INFO - Logfile is 'main.blg'
+[2] biber:155> INFO - === Mon Oct 29, 2012, 23:37:38
+[2] Biber.pm:286> INFO - Reading 'main.bcf'
+[70] Biber.pm:585> INFO - Found 16 citekeys in bib section 0
+[79] Biber.pm:2802> INFO - Processing section 0
+[87] Biber.pm:2895> INFO - Looking for bibtex format file './bibliography/main.bib' for section 0
+[89] bibtex.pm:783> INFO - Decoding LaTeX character macros into UTF-8
+[89] bibtex.pm:658> INFO - Found BibTeX data source './bibliography/main.bib'
+[159] Biber.pm:2691> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[159] Biber.pm:2697> INFO - Sorting 'entry' list 'none' keys
+[159] Biber.pm:2701> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[182] bbl.pm:456> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[183] bbl.pm:516> INFO - Output to main.bbl

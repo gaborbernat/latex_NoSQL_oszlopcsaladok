@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Thu Oct 25 23:30:53 CEST 2012
+markTmpDer=true
+builderNum=2
+outputDir=out/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=main.tex
+outputFile=oszlopcsaladok_GAB9MT.pdf
+langSpell=hu
+markDer=true
+srcDir=src/

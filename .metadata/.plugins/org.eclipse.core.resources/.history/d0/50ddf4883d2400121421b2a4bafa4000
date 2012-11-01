@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt,oneside,openright]{report}% HEAD SECTION ->
+
+\usepackage		 {a4wide  }% Don't waste place on the page.
+\usepackage[T1]    {fontenc }% Allow accented output charachters
+\usepackage[utf8]  {inputenc}% Allow accented input charachters 
+\usepackage        {lmodern }% Modern output font	
+\usepackage[english,magyar]{babel   }% Set document language to use
+\usepackage		 {amsmath}%Math mode additions
+\usepackage		 {floatrow}% Append additional information to images (source)
+
+\usepackage        {xcolor  }% Colors are fun :)
+
+ 
+\usepackage		   {hyperref}% - Add links between the doc elements
+\usepackage[open, openlevel=2,atend]{bookmark}% - We want numbers
+
+% The csquotes should be used with bable to help with the references formating 
+\usepackage[style=english]{csquotes} 
+
+% Background highlight color used for the source code and the tables
+\definecolor{bgSrc}{rgb}{0.95,0.95,0.95}
+
+\begin{document}
+
+% A címlap
+%\input{cimlap.tex}
+\tableofcontents
+
+\chapter{Oszlopcsaládok}
+
+Amennyiben adatbázisainkat Edgar F. Codd cikke nyomán táblákba
+rendezve képzeljük el két nagy irány tárul elénk: sorba vagy oszlopba rendezve.
+A tábla egy bejegyzése egy adott objektum attribútumait tárolja el. A sor
+orientált elképzelésben egy--egy bejegyzés, mint egy attribútum csomag van
+eltárolva. Tehát az adott bejegyzés attribútumai többnyire egymást követve, egy
+helyen lesz eltárolva. Ezzel szemben az oszlop orientált megalkotásban az
+objektum példányok attribútumai vannak egy helyre gyűjtve.
+
+A 20.--ik század folyamán a gyakorlatban a sor orientált adatbázisok terjedtek
+el.
+Az oszlop orientált megközelítés erőssége a sor orientálttal szemben az, hogy az
+aggregációs műveletek rövidebb idő költséggel rendelkeznek. Ennek oka, hogy
+amennyiben csupán egy (vagy kevés) attribútum szerint akarunk elvégezni egy
+műveletet, akkor nem kell a lassú merevlemezről beolvasnunk a tábla
+bejegyzéseinek többi attribútumát is, mivel az érdekelt információ halmazt
+szekvenciálisan egy helyen tároljuk. Ilyen műveletek főleg az OLAP rendszerekben
+gyakori.
+
+\section{Oszlopba avagy sorba rendezve?}\label{sec:oszlop_relacios}
+
+
+Ez elvisz \aref{sec:oszlop_relacios} részhez, vagy nem\ldots 
+
+
+\section{A ,,széles’’ oszlop családok}
+
+A NoSQL világban viszont az oszlopcsalád fogalma mást rejt, mint csupán
+\aref{sec:oszlop_relacios} fejezetben definiált tulajdonságok. 
+
+\end{document}

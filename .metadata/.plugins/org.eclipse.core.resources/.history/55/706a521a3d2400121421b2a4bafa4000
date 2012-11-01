@@ -1,0 +1,132 @@
+\documentclass[a4paper,12pt,oneside,openright]{report}% HEAD SECTION ->
+
+\usepackage		 {a4wide  }% Don't waste place on the page.
+\usepackage[T1]    {fontenc }% Allow accented output charachters
+\usepackage[utf8]  {inputenc}% Allow accented input charachters 
+\usepackage        {lmodern }% Modern output font	
+\usepackage[english,magyar]{babel   }% Set document language to use
+\usepackage		 {amsmath}%Math mode additions
+\usepackage		 {floatrow}% Append additional information to images (source)
+
+\usepackage[pdftex]{graphicx}% Adds the ability to include images 
+\usepackage        {xcolor  }% Colors are fun :)
+\usepackage        {colortbl}% Named even more. 
+\usepackage        {url     }% Makes urls clickable 
+\usepackage		 {minted  }% Code syntax highlighting 
+
+\usepackage		 {tikz	  }% Latex drawn figures
+\usetikzlibrary	 {matrix  }
+\usepackage        {scalefnt }% Scale the latex drawn figure elements
+ 
+\usepackage		   {hyperref}% - Add links between the doc elements
+\usepackage[open, openlevel=2,atend]{bookmark}% - We want numbers
+\bookmarksetup{color=green}
+% The csquotes should be used with bable to help with the references formating 
+\usepackage[style=english]{csquotes} 
+% Biblatex
+\usepackage[style=ieee,
+backend=biber,babel=other*, language=english, sorting=none,
+backref=false]{biblatex} \DeclareSourcemap{ % Unfortunetly the
+% bibtex currently knows of online type, not webpage. For now just map it.
+  \maps[datatype=bibtex]{
+    \map{
+      \step[typesource=webpage, typetarget=online]
+    }
+  }
+}
+
+\addbibresource{./bibliography/main.bib}
+\input{smiley.tex}
+% Background highlight color used for the source code and the tables
+\definecolor{bgSrc}{rgb}{0.95,0.95,0.95}
+
+\begin{document}
+
+% A címlap
+%\input{cimlap.tex}
+
+
+\chapter{Oszlopcsaládok}
+
+Amennyiben adatbázisainkat Edgar F. Codd cikke\cite{Codd1970} nyomán táblákba
+rendezve képzeljük el két nagy irány tárul elénk: sorba vagy oszlopba rendezve.
+A tábla egy bejegyzése egy adott objektum attribútumait tárolja el. A sor
+orientált elképzelésben egy--egy bejegyzés, mint egy attribútum csomag van
+eltárolva. Tehát az adott bejegyzés attribútumai többnyire egymást követve, egy
+helyen lesz eltárolva. Ezzel szemben az oszlop orientált megalkotásban az
+objektum példányok attribútumai vannak egy helyre gyűjtve.
+
+A 20.--ik század folyamán a gyakorlatban a sor orientált adatbázisok terjedtek
+el.
+Az oszlop orientált megközelítés erőssége a sor orientálttal szemben az, hogy az
+aggregációs műveletek rövidebb idő költséggel rendelkeznek. Ennek oka, hogy
+amennyiben csupán egy (vagy kevés) attribútum szerint akarunk elvégezni egy
+műveletet, akkor nem kell a lassú merevlemezről beolvasnunk a tábla
+bejegyzéseinek többi attribútumát is, mivel az érdekelt információ halmazt
+szekvenciálisan egy helyen tároljuk. Ilyen műveletek főleg az OLAP rendszerekben
+gyakori.
+
+\section{Oszlopba avagy sorba rendezve?}\label{sec:oszlop_relacios}
+
+
+Ez elvisz \aref{sec:oszlop_relacios} részhez, vagy nem\ldots 
+
+A sor orientált adatbázisok esetében egy összetartozó adat csomag
+attribútumaival egy összetartó egységben van tárolva. Ezzel szemben az oszlop
+orientált adatbázisok mögött az alap ötlet, hogy egy--egy adat csomó adatai
+bejegyzések, amely értéke egy attribútum halmaz valamely eleme
+lehet\cite{ColumnOriantedAbadiBH09}. A halmaz elemeit egy helyen tároljuk.
+
+Például, legyen egy cikkeket tároló adatbázisunk. Minden cikkhez létezik három
+attribútum: név, típus és ára. \Aref{tab:sorOrientalt} táblázat szemléltet egy
+sor orientált tárolást. Ezzel szemben \aref{tab:oszlopOrientalt} egy oszlop
+alapú megoldásra mutat rá.
+
+\begin{table}[ht]
+\caption{Sor orientált adat tárolás}\label{tab:sorOrientalt}
+\begin{tabular}{l|c|r}
+\hline \rule[-2ex]{0pt}{5.5ex} Név & Típus & Ár \\ 
+\hline 
+Élet--halál harc  & Technológia & $1$ \\ 
+Vízilabda Kupa    & Sport       & $2$ \\ 
+A Prada növekszik & Divat       & $3$ \\ 
+\hline 
+\end{tabular} 
+\end{table}
+
+\begin{table}[ht]
+\caption{Sor orientált adat tárolás}\label{tab:oszlopOrientalt}
+\begin{tabular}{p{1.1cm}|p{3.7cm}p{3.7cm}p{3.7cm}}
+\hline
+Név   & Élet--halál harc & Vízilabda Kupa & A Prada növekszik\\ \hline
+Típus & Technológia      & Sport          & Divat            \\ \hline   
+Ár    & $1$              & $2$            & $3$              \\ \hline 
+\end{tabular} 
+\end{table}
+Az \foreignlanguage{english}{OLAP (Online Analytical Processing)} és adattárház
+rendszerek általában oszlop orientáltan tárolják az információt. E mögött az ok
+az, hogy a szükséges aggregációs műveleteket gyorsabban végre lehet hajtani,
+mert ha például átlag árat kell kiszámolnunk, a szükséges adatokat
+szekvenciálisan könnyedén kiolvashatjuk érintetlenül hagyva a többi
+attribútumot. Továbbá a kulcs--érték rendszerhez hasonlóan az adatcsomók között
+laza a kapcsolat.
+
+Ugyanakkor tárhelybe is hatékonyabbak, hiszen az oszlopok entrópiája általában
+kicsi, e miatt meg nagy hatékonyságú tömörítéseket végezhetünk el. Elterjedt
+oszloporientált relációs adatbázis implementációk: a Vertica, Sysbase avagy a
+MonetDB rendszerek.
+
+\section{A ,,széles’’ oszlop családok}
+
+A NoSQL világban viszont az oszlopcsalád fogalma mást rejt, mint csupán
+\aref{sec:oszlop_relacios} fejezetben definiált tulajdonságok. 
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\printbibliography
+
+\end{document}

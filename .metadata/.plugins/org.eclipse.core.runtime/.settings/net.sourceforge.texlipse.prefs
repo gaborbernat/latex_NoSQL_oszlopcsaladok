@@ -1,0 +1,2 @@
+class\ net.sourceforge.texlipse.builder.PdflatexRunner_args=\ -shell-escape -synctex\=1 -interaction\=nonstopmode --src-specials %input
+eclipse.preferences.version=1

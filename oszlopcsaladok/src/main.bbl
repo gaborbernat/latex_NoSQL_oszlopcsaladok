@@ -1,0 +1,427 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{none}
+    \entry{Codd1970}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=aba808926ba6c2c756370e5a922c9f62}{Codd}{C\bibinitperiod}{Edgar\bibnamedelima F.}{E\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=aba808926ba6c2c756370e5a922c9f62}{Codd}{C\bibinitperiod}{Edgar\bibnamedelima F.}{E\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{aba808926ba6c2c756370e5a922c9f62}
+      \strng{fullhash}{aba808926ba6c2c756370e5a922c9f62}
+      \field{sortinit}{0}
+      \field{labeltitle}{{A Relational Model of Data for Large Shared Data Banks}}
+      \field{journaltitle}{CACM}
+      \field{month}{06}
+      \field{number}{6}
+      \field{title}{{A Relational Model of Data for Large Shared Data Banks}}
+      \field{volume}{13}
+      \field{year}{1970}
+      \field{pages}{377\bibrangedash 387}
+      \keyw{relationaledatenbank relationaldatabase}
+    \endentry
+    \entry{ColumnOriantedAbadiBH09}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=d720c00523f9be0ce159d95e62330b83}{Abadi}{A\bibinitperiod}{Daniel\bibnamedelima J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=9d7f371579170187dae3df4ff4a7e165}{Boncz}{B\bibinitperiod}{Peter\bibnamedelima A.}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=aa7a2165bb118da575a8234a0b8be713}{Harizopoulos}{H\bibinitperiod}{Stavros}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=d720c00523f9be0ce159d95e62330b83}{Abadi}{A\bibinitperiod}{Daniel\bibnamedelima J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=9d7f371579170187dae3df4ff4a7e165}{Boncz}{B\bibinitperiod}{Peter\bibnamedelima A.}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=aa7a2165bb118da575a8234a0b8be713}{Harizopoulos}{H\bibinitperiod}{Stavros}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{222c9668f796b38bd73bddacf91dc37a}
+      \strng{fullhash}{222c9668f796b38bd73bddacf91dc37a}
+      \field{sortinit}{0}
+      \field{labeltitle}{Column oriented Database Systems.}
+      \field{journaltitle}{PVLDB}
+      \field{number}{2}
+      \field{title}{Column oriented Database Systems.}
+      \field{volume}{2}
+      \field{year}{2009}
+      \field{pages}{1664\bibrangedash 1665}
+      \verb{url}
+      \verb http://dblp.uni-trier.de/db/journals/pvldb/pvldb2.html#AbadiBH09
+      \endverb
+      \keyw{column database}
+    \endentry
+    \entry{googlefilesystem}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=193bcec5240237591ad8fb697869f013}{Ghemawat}{G\bibinitperiod}{Sanjay}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=cba27430b5b9cc9a103159616e785bbd}{Gobioff}{G\bibinitperiod}{Howard}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=408f4502cb10162a8e4bab0e4cc0649b}{Leung}{L\bibinitperiod}{Shun-Tak}{S\bibinithyphendelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=193bcec5240237591ad8fb697869f013}{Ghemawat}{G\bibinitperiod}{Sanjay}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=cba27430b5b9cc9a103159616e785bbd}{Gobioff}{G\bibinitperiod}{Howard}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=408f4502cb10162a8e4bab0e4cc0649b}{Leung}{L\bibinitperiod}{Shun-Tak}{S\bibinithyphendelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{57e17cb11465ebe3ae3f1449f8b1549f}
+      \strng{fullhash}{57e17cb11465ebe3ae3f1449f8b1549f}
+      \field{sortinit}{0}
+      \field{labeltitle}{{The Google File System}}
+      \field{issn}{0163-5980}
+      \field{journaltitle}{SIGOPS Oper. Syst. Rev.}
+      \field{number}{5}
+      \field{title}{{The Google File System}}
+      \field{volume}{37}
+      \field{year}{2003}
+      \field{pages}{29\bibrangedash 43}
+      \verb{doi}
+      \verb http://doi.acm.org/10.1145/1165389.945450
+      \endverb
+      \keyw{imported}
+    \endentry
+    \entry{dean2008mapreduce}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{Dean}{D\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=193bcec5240237591ad8fb697869f013}{Ghemawat}{G\bibinitperiod}{Sanjay}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{Dean}{D\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=193bcec5240237591ad8fb697869f013}{Ghemawat}{G\bibinitperiod}{Sanjay}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{59b423e9fed33260f87a089f738c1beb}
+      \strng{fullhash}{59b423e9fed33260f87a089f738c1beb}
+      \field{sortinit}{0}
+      \field{labeltitle}{MapReduce: simplified data processing on large clusters}
+      \field{abstract}{MapReduce is a programming model and an associated implementation for processing and generating large datasets that is amenable to a broad variety of real-world tasks. Users specify the computation in terms of a <i>map</i> and a <i>reduce</i> function, and the underlying runtime system automatically parallelizes the computation across large-scale clusters of machines, handles machine failures, and schedules inter-machine communication to make efficient use of the network and disks. Programmers find the system easy to use: more than ten thousand distinct MapReduce programs have been implemented internally at Google over the past four years, and an average of one hundred thousand MapReduce jobs are executed on Google's clusters every day, processing a total of more than twenty petabytes of data per day.}
+      \field{issn}{0001-0782}
+      \field{journaltitle}{Communications of the ACM}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{MapReduce: simplified data processing on large clusters}
+      \field{volume}{51}
+      \field{year}{2008}
+      \field{pages}{107\bibrangedash 113}
+      \verb{doi}
+      \verb 10.1145/1327452.1327492
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/1327452.1327492
+      \endverb
+      \keyw{cloud computing data database mapreduce parallel processing}
+    \endentry
+    \entry{Chang2006}{inproceedings}{}
+      \name{labelname}{9}{}{%
+        {{hash=99aa91509d23d29aa378129870419731}{Chang}{C\bibinitperiod}{Fay}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{Dean}{D\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=193bcec5240237591ad8fb697869f013}{Ghemawat}{G\bibinitperiod}{Sanjay}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=72533d17cd827480c1d3dc2e13b33c52}{Hsieh}{H\bibinitperiod}{Wilson\bibnamedelima C.}{W\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=4a21ba388f565780abb47c86d6cb6c0a}{Wallach}{W\bibinitperiod}{Deborah\bibnamedelima A.}{D\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=52bd219ee38c5f14ff2c280e7e4216d1}{Burrows}{B\bibinitperiod}{Mike}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=aae0ced6a97ff5b4ca38e38013046ebe}{Chandra}{C\bibinitperiod}{Tushar}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=54829df18899a21970bee5323732f0f3}{Fikes}{F\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=7369c6914b10a94d2e60876cb0c9d64e}{Gruber}{G\bibinitperiod}{Robert\bibnamedelima E.}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{9}{}{%
+        {{hash=99aa91509d23d29aa378129870419731}{Chang}{C\bibinitperiod}{Fay}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{Dean}{D\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=193bcec5240237591ad8fb697869f013}{Ghemawat}{G\bibinitperiod}{Sanjay}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=72533d17cd827480c1d3dc2e13b33c52}{Hsieh}{H\bibinitperiod}{Wilson\bibnamedelima C.}{W\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=4a21ba388f565780abb47c86d6cb6c0a}{Wallach}{W\bibinitperiod}{Deborah\bibnamedelima A.}{D\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=52bd219ee38c5f14ff2c280e7e4216d1}{Burrows}{B\bibinitperiod}{Mike}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=aae0ced6a97ff5b4ca38e38013046ebe}{Chandra}{C\bibinitperiod}{Tushar}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=54829df18899a21970bee5323732f0f3}{Fikes}{F\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=7369c6914b10a94d2e60876cb0c9d64e}{Gruber}{G\bibinitperiod}{Robert\bibnamedelima E.}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{788b7db65118752f7e95d0209ca7e64c}
+      \strng{fullhash}{aba7838ffda7e22d0a99c75d9e1a967a}
+      \field{sortinit}{0}
+      \field{labeltitle}{Bigtable: A distributed storage system for structured data}
+      \field{abstract}{Bigtable is a distributed storage system for managing structured data that is designed to scale to a very large size: petabytes of data across thousands of commodity servers. Many projects at Google store data in Bigtable, including web indexing, Google Earth, and Google Finance. These applications place very different demands on Bigtable, both in terms of data size (from URLs to web pages to satellite imagery) and latency requirements (from backend bulk processing to real-time data serving). Despite these varied demands, Bigtable has successfully provided a flexible, high-performance solution for all of these Google products. In this paper we describe the simple data model provided by Bigtable, which gives clients dynamic control over data layout and format, and we describe the design and implementation of Bigtable.}
+      \field{booktitle}{Proceedings of the 7th USENIX Symposium on Operating Systems Design and Implementation (OSDI'06)}
+      \field{title}{Bigtable: A distributed storage system for structured data}
+      \field{year}{2006}
+      \verb{url}
+      \verb http://labs.google.com/papers/bigtable.html
+      \endverb
+      \keyw{bigtable hadoop hbase}
+    \endentry
+    \entry{amazonDynamo}{article}{}
+      \name{labelname}{9}{}{%
+        {{hash=d5c41c0ac7ba7e89ace423e49e7fdc44}{DeCandia}{D\bibinitperiod}{Giuseppe}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=6082e8ea5d31af84a1f8d23fe19f1069}{Hastorun}{H\bibinitperiod}{Deniz}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=65e5bb2e5094e3f29ff9489826202fec}{Jampani}{J\bibinitperiod}{Madan}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=fbf8232f34db8c435e88d3fda626ba27}{Kakulapati}{K\bibinitperiod}{Gunavardhan}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=69381b01b9ac73dc672002d91982b8ab}{Lakshman}{L\bibinitperiod}{Avinash}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=c3033dfe7499541df03f25d6df8e03d1}{Pilchin}{P\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=4ad6c42d13d83343aea429cf41b629f5}{Sivasubramanian}{S\bibinitperiod}{Swaminathan}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=1aff2a593efecd57660f7e8f0600ffff}{Vosshall}{V\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=288122751d34bf910fc7f5f89e9d3300}{Vogels}{V\bibinitperiod}{Werner}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{9}{}{%
+        {{hash=d5c41c0ac7ba7e89ace423e49e7fdc44}{DeCandia}{D\bibinitperiod}{Giuseppe}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=6082e8ea5d31af84a1f8d23fe19f1069}{Hastorun}{H\bibinitperiod}{Deniz}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=65e5bb2e5094e3f29ff9489826202fec}{Jampani}{J\bibinitperiod}{Madan}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=fbf8232f34db8c435e88d3fda626ba27}{Kakulapati}{K\bibinitperiod}{Gunavardhan}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=69381b01b9ac73dc672002d91982b8ab}{Lakshman}{L\bibinitperiod}{Avinash}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=c3033dfe7499541df03f25d6df8e03d1}{Pilchin}{P\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=4ad6c42d13d83343aea429cf41b629f5}{Sivasubramanian}{S\bibinitperiod}{Swaminathan}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=1aff2a593efecd57660f7e8f0600ffff}{Vosshall}{V\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=288122751d34bf910fc7f5f89e9d3300}{Vogels}{V\bibinitperiod}{Werner}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{07c04867e3bc6dc531f58505bc2ee41b}
+      \strng{fullhash}{02a5f6f3af91de01fdf370a160386494}
+      \field{sortinit}{0}
+      \field{labeltitle}{Dynamo: amazon's highly available key-value store}
+      \field{issn}{0163-5980}
+      \field{journaltitle}{SIGOPS Oper. Syst. Rev.}
+      \field{number}{6}
+      \field{title}{Dynamo: amazon's highly available key-value store}
+      \field{volume}{41}
+      \field{year}{2007}
+      \field{pages}{205\bibrangedash 220}
+      \verb{doi}
+      \verb http://doi.acm.org/10.1145/1323293.1294281
+      \endverb
+      \keyw{imported}
+    \endentry
+    \entry{Brewer2000}{inproceedings}{}
+      \name{labelname}{1}{}{%
+        {{hash=325b88a8d9e075b51b846c7b62022fa2}{Brewer}{B\bibinitperiod}{Eric\bibnamedelima A.}{E\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=325b88a8d9e075b51b846c7b62022fa2}{Brewer}{B\bibinitperiod}{Eric\bibnamedelima A.}{E\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{325b88a8d9e075b51b846c7b62022fa2}
+      \strng{fullhash}{325b88a8d9e075b51b846c7b62022fa2}
+      \field{sortinit}{0}
+      \field{labeltitle}{Towards Robust Distributed Systems.}
+      \field{booktitle}{Symposium on Principles of Distributed Computing (PODC)}
+      \field{title}{Towards Robust Distributed Systems.}
+      \field{year}{2000}
+      \verb{url}
+      \verb http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf
+      \endverb
+      \keyw{cap nosql}
+    \endentry
+    \entry{GilbertLynch2002}{inproceedings}{}
+      \name{labelname}{2}{}{%
+        {{hash=1de0da84dd43d0f480ffc9c70be34dc5}{Gilbert}{G\bibinitperiod}{Seth}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6613a6fcc0482e691a0e8d84039b9458}{Lynch}{L\bibinitperiod}{Nancy}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=1de0da84dd43d0f480ffc9c70be34dc5}{Gilbert}{G\bibinitperiod}{Seth}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6613a6fcc0482e691a0e8d84039b9458}{Lynch}{L\bibinitperiod}{Nancy}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{220e8940797e44af8a50c3d3d438c505}
+      \strng{fullhash}{220e8940797e44af8a50c3d3d438c505}
+      \field{sortinit}{0}
+      \field{labeltitle}{Brewer's Conjecture and the Feasibility of Consistent Available Partition-Tolerant Web Services}
+      \field{booktitle}{In ACM SIGACT News}
+      \field{title}{Brewer's Conjecture and the Feasibility of Consistent Available Partition-Tolerant Web Services}
+      \field{year}{2002}
+      \field{pages}{2002}
+      \verb{url}
+      \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.20.1495&rep=rep1&type=pdf
+      \endverb
+      \keyw{cap nosql sys:hidden:my:bachelor sys:read}
+    \endentry
+    \entry{JulianBrowneCAP}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=47951ad299fd35c7b1a77cf25d1ef1ce}{Browne}{B\bibinitperiod}{Julian}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=47951ad299fd35c7b1a77cf25d1ef1ce}{Browne}{B\bibinitperiod}{Julian}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{47951ad299fd35c7b1a77cf25d1ef1ce}
+      \strng{fullhash}{47951ad299fd35c7b1a77cf25d1ef1ce}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Brewer's CAP Theorem}}
+      \field{month}{01}
+      \field{title}{{Brewer's CAP Theorem}}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://www.julianbrowne.com/article/viewer/brewers-cap-theorem
+      \endverb
+      \keyw{blog entry}
+    \endentry
+    \entry{EdlichFriedlandHampeBrauer201010}{book}{}
+      \name{labelname}{4}{}{%
+        {{hash=2909f906a2f3c776b3f1c8e106d76c84}{Edlich}{E\bibinitperiod}{Stefan}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6bb52cfe830a879fe8f568f30629af14}{Friedland}{F\bibinitperiod}{Achim}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=cf2ea79b4c31708d595577e24e4649bc}{Hampe}{H\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0302563bed8162e273464481818e9576}{Brauer}{B\bibinitperiod}{Benjamin}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=2909f906a2f3c776b3f1c8e106d76c84}{Edlich}{E\bibinitperiod}{Stefan}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6bb52cfe830a879fe8f568f30629af14}{Friedland}{F\bibinitperiod}{Achim}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=cf2ea79b4c31708d595577e24e4649bc}{Hampe}{H\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0302563bed8162e273464481818e9576}{Brauer}{B\bibinitperiod}{Benjamin}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Hanser Fachbuchverlag}%
+      }
+      \strng{namehash}{370c4c3e3565a55c7ce1bc2a7420c198}
+      \strng{fullhash}{48b0bea20ec0597b1bd2ae0ce0f7394c}
+      \field{sortinit}{0}
+      \field{labeltitle}{NoSQL: Einstieg in die Welt nichtrelationaler Web 2.0 Datenbanken}
+      \field{isbn}{9783446423558}
+      \field{month}{10}
+      \field{title}{NoSQL: Einstieg in die Welt nichtrelationaler Web 2.0 Datenbanken}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://amazon.de/o/ASIN/3446423559/
+      \endverb
+      \keyw{nosql web-2.0-datenbanken}
+    \endentry
+    \entry{Edlich2011}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=2909f906a2f3c776b3f1c8e106d76c84}{Edlich}{E\bibinitperiod}{Stefan}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2909f906a2f3c776b3f1c8e106d76c84}{Edlich}{E\bibinitperiod}{Stefan}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2909f906a2f3c776b3f1c8e106d76c84}
+      \strng{fullhash}{2909f906a2f3c776b3f1c8e106d76c84}
+      \field{sortinit}{0}
+      \field{labeltitle}{{NOSQL Databases}}
+      \field{month}{01}
+      \field{title}{{NOSQL Databases}}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://nosql-database.org/
+      \endverb
+      \keyw{imported}
+    \endentry
+    \entry{WideColumnStore}{unpublished}{}
+      \name{labelname}{1}{}{%
+        {{hash=b11dc3220d8bda26e40b5e62b469996c}{Prof.\bibnamedelimi Dr.\bibnamedelimi Marc\bibnamedelimb H.\bibnamedelimi Scholl}{P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim S\bibinitperiod}{Dr.\bibnamedelimi Christian\bibnamedelima Grün.}{D\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b11dc3220d8bda26e40b5e62b469996c}{Prof.\bibnamedelimi Dr.\bibnamedelimi Marc\bibnamedelimb H.\bibnamedelimi Scholl}{P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim S\bibinitperiod}{Dr.\bibnamedelimi Christian\bibnamedelima Grün.}{D\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b11dc3220d8bda26e40b5e62b469996c}
+      \strng{fullhash}{b11dc3220d8bda26e40b5e62b469996c}
+      \field{sortinit}{0}
+      \field{labeltitle}{Lecture: Advanced Database Technologies}
+      \field{note}{DBIS Group - Universität Konstanz}
+      \field{title}{Lecture: Advanced Database Technologies}
+    \endentry
+    \entry{Lakshman:2010:CDS:1773912.1773922}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=69381b01b9ac73dc672002d91982b8ab}{Lakshman}{L\bibinitperiod}{Avinash}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=c7407d45f630f3224034f9c209effb12}{Malik}{M\bibinitperiod}{Prashant}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=69381b01b9ac73dc672002d91982b8ab}{Lakshman}{L\bibinitperiod}{Avinash}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=c7407d45f630f3224034f9c209effb12}{Malik}{M\bibinitperiod}{Prashant}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{7764f4cd88a861be6cac7a7db065523c}
+      \strng{fullhash}{7764f4cd88a861be6cac7a7db065523c}
+      \field{sortinit}{0}
+      \field{labeltitle}{Cassandra: a decentralized structured storage system}
+      \field{abstract}{Cassandra is a distributed storage system for managing very large amounts of structured data spread out across many commodity servers, while providing highly available service with no single point of failure. Cassandra aims to run on top of an infrastructure of hundreds of nodes (possibly spread across different data centers). At this scale, small and large components fail continuously. The way Cassandra manages the persistent state in the face of these failures drives the reliability and scalability of the software systems relying on this service. While in many ways Cassandra resembles a database and shares many design and implementation strategies therewith, Cassandra does not support a full relational data model; instead, it provides clients with a simple data model that supports dynamic control over data layout and format. Cassandra system was designed to run on cheap commodity hardware and handle high write throughput while not sacrificing read efficiency.}
+      \field{issn}{0163-5980}
+      \field{journaltitle}{SIGOPS Oper. Syst. Rev.}
+      \field{month}{04}
+      \field{number}{2}
+      \field{title}{Cassandra: a decentralized structured storage system}
+      \field{volume}{44}
+      \field{year}{2010}
+      \field{pages}{35\bibrangedash 40}
+      \verb{doi}
+      \verb 10.1145/1773912.1773922
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/1773912.1773922
+      \endverb
+      \keyw{2012 cassandra nosql seminar summer talk}
+    \endentry
+    \entry{CassandraManual}{manual}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Apache Cassandra 1.1 Documentation}
+      \field{title}{Apache Cassandra 1.1 Documentation}
+    \endentry
+    \entry{hbase2011george}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=3bae86e93d4b2df3e7c6f127e563e36b}{George}{G\bibinitperiod}{Lars}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=3bae86e93d4b2df3e7c6f127e563e36b}{George}{G\bibinitperiod}{Lars}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{3bae86e93d4b2df3e7c6f127e563e36b}
+      \strng{fullhash}{3bae86e93d4b2df3e7c6f127e563e36b}
+      \field{sortinit}{0}
+      \field{labeltitle}{HBase: The Definitive Guide}
+      \field{edition}{1}
+      \field{isbn}{1449396100}
+      \field{title}{HBase: The Definitive Guide}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://www.amazon.de/HBase-Definitive-Guide-Lars-George/dp/1449396100/ref=sr_1_1?ie=UTF8&qid=1317281653&sr=8-1
+      \endverb
+      \keyw{definitive guide hbase}
+    \endentry
+    \entry{chubby2006burrows}{inproceedings}{}
+      \name{labelname}{1}{}{%
+        {{hash=9dcc719f71cb967ace284d342601d3f8}{Burrows}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9dcc719f71cb967ace284d342601d3f8}{Burrows}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {USENIX Association}%
+      }
+      \strng{namehash}{9dcc719f71cb967ace284d342601d3f8}
+      \strng{fullhash}{9dcc719f71cb967ace284d342601d3f8}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Chubby Lock Service for Loosely-Coupled Distributed Systems.}
+      \field{booktitle}{OSDI}
+      \field{title}{The Chubby Lock Service for Loosely-Coupled Distributed Systems.}
+      \field{year}{2006}
+      \field{pages}{335\bibrangedash 350}
+      \keyw{chubby distributed lock service sys:hidden:my:bachelor system}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
