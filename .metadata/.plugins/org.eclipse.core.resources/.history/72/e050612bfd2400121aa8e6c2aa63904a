@@ -18,7 +18,6 @@
 \usepackage		 {tikz	  }% Latex drawn figures
 \usetikzlibrary	 {matrix  }
 \usepackage        {scalefnt }% Scale the latex drawn figure elements
-\usepackage[pdf]{pstricks}
 
 % The csquotes should be used with bable to help with the references formating 
 \usepackage[style=english]{csquotes} 
@@ -172,7 +171,7 @@ kicsi, e miatt meg nagy hatékonyságú tömörítéseket végezhetünk el. Elte
 oszloporientált relációs adatbázis implementációk: a Vertica, Sysbase avagy a 
 MonetDB rendszerek.
 
-\section{A ,,széles’’ oszlopcsaládok}
+\section{A ,,széles’’ oszlop családok}
 
 A NoSQL világban viszont az oszlopcsalád fogalma mást rejt, mint csupán
 \aref{sec:oszlop_relacios} fejezetben definiált tulajdonságok. 
@@ -181,7 +180,7 @@ A NoSQL világban viszont az oszlopcsalád fogalma mást rejt, mint csupán
 
 Megjelenésüket a $2000$--es évek első feléhez köthetjük, amikor is eleget
 fejlődött a világ ahhoz, hogy mint tároló kapacitás és hálózati elérhetőség
-szempontból megoldható legyen tömérdek adat eltárolása. Az eltárolás mellett
+szempontból megoldható legyen tömérdek adat eltárolása. Az eltárolás mellet
 felmerült az igény, hogy azt feldolgozzuk és információkat nyerjünk ki belőle,
 akár közel valós időben is. E problémával az internet világ akkori legnagyobb
 gigásza, a Google, is szembesült.
@@ -205,7 +204,7 @@ A Google is hasonlóan cselekedett és mivel kor legnagyobb teljesítményű
 számítógépe sem volt képes az Google által generált adatmennyiség egy gépen való
 tárolására, így nem meglepő az elosztott architektúra felé való orientáció. Egy
 olyan rendszer után kutattak, amely könnyedén tud tárolni és feldolgozni nagy
-mennyiségű adatott. Mind e mellett a skálázhatósága se jelentsen gondot, és
+mennyiségű adatott. Mind e mellet a skálázhatósága se jelentsen gondot, és
 lehetőleg könnyen beszerezhető és karbantartható hardver egységekre építsen. Itt
 olyan elemekre gondoljunk amelyek akár a helyi számítástechnika szaküzletben is
 megtalálhatóak.
@@ -484,10 +483,9 @@ hol tároljuk el, hogy később könnyedén megkapjuk? A helyzetet ábrázolja
 \caption{Adat halmaz tárolása klaszter felett}
 \centering
 \label{fig:WhereToStore}
-%\includegraphics[width=0.9\textwidth]{./kepek/adat_klaszter.png}
-\def\svgwidth{\columnwidth}
-\input{./kepek/adat_klaszter.pdf_tex}
+\includegraphics[width=0.5\textwidth]{./kepek/adat_tarol.png}
 \end{figure}
+	
 
 A Cassandra válassza erre az \emph{adat gyűrű}. Ennek egy sematikus felépítését
 \aref{fig:CassandraDataRing} ábra szemlélteti. Minden adat egységnek van egy sor
@@ -609,18 +607,18 @@ hajlandóak fizetni. Egy Cassandra adatbázis megalkotása nem úgy kezdődik, h
 milyen adatunk van, hogy tároljuk el; hanem, hogy milyen lekérdezéseket akarunk
 majd elvégezni?
 
-A relációs adatbázisok belli sémák kulcs téré módosulnak, a táblák
-oszlopcsaládokká. A hasonlat viszont itt megáll, mert nincs idegen kulcs, nincs
+A relációs adatbázisok belli sémák kulcs téré módosulnak, a táblák oszlop
+családokká. A hasonlat viszont itt megáll, mert nincs idegen kulcs, nincs
 kapcsolat a családok között és olvasás közben nem lehetséges a családokon JOIN
 művelet. Ennek megfelelően, ha valamilyen adat szükséges egy lekérdezéshez,
-akkor annak ott kell lennie az oszlopcsaládban, mint egy oszlop.
+akkor annak ott kell lennie az oszlop családban, mint egy oszlop.
 
-Az oszlopcsaládok oszlopokból állnak. Egy oszlopcsalád lehet \emph{statikus}
+Az oszlop családok oszlopokból állnak. Egy oszlopcsalád lehet \emph{statikus}
 vagy \emph{dinamikus}. Az oszlopok meg a következő típusok közül vehetnek fel
 egyet: \emph{standard}, \emph{összetett}, \emph{lejáró}, \emph{számláló} avagy
 \emph{szuper}.
 
-\subsubsection{oszlopcsalád típusok}
+\subsubsection{Oszlop család típusok}
 
  \paragraph{Statikus} 
  
@@ -631,8 +629,8 @@ egy felhasználó adatait tároló oszlopcsaládot mutat.
 
 Abban viszont eltér a relációs tábláktól, hogy nincs szükség NULL elemre a
 hiányzó adat mezők (oszlopok) jelzésére. A Cassandra oszlopcsaládok natív módon
-képesek úgy nevezett ritka tárolásra. Amely oszlop nem létezik az
-oszlopcsaládból, azt egész egyszerűen nem vesszük fel a sor beszúrásakor.
+képesek úgy nevezett ritka tárolásra. Amely oszlop nem létezik az oszlop
+családból, azt egész egyszerűen nem vesszük fel a sor beszúrásakor.
  
 \begin{figure}[H]
 \caption[Statikus oszlopcsalád a Cassandrában]{Statikus oszlopcsalád a
@@ -651,7 +649,7 @@ Funkcionálisan úgy lehet felfogni, mint egy előre materializált nézetet, am
 előre kiszámolunk, és hatékony módon tárolunk el. Ez esetben csak az oszlop név 
 és tartalmának típusát kell előzetesen definiálni. 
 \Aref{fig:CassandraColumnFamiliyDynamic} ábra például felhasználók közti
-kapcsolatot modellez egy oszlopcsaládba foglalva mindezt.
+kapcsolatot modellez egy oszlop családba foglalva mindezt.
  
  \begin{figure}[H]
 \caption[Dinamikus oszlopcsalád a Cassandrában]{Dinamikus oszlopcsalád a
@@ -839,48 +837,42 @@ $8$ bájt merevlemez és memória költséggel jár.
 
 \paragraph{Számláló oszlopok}
 
-Egy számláló oszlop speciális oszlopcsaládot igényel, e miatt gyakorlatilag
-saját oszlopcsaládot kell létrehozni. Ellenben, amint ez megtörtént, egy--egy
-számláló érték frissítésére, csupán a változási értéket kell megadnunk. A
-számláló oszlopokra igaz, hogy:
+Egy számláló oszlop speciális oszlop családot igényel, e miatt gyakorlatilag
+saját oszlopcsaládot kell létrehozni. Ellenben, amint ez megtörtént egy--egy
+számláló érték frissítésére csupán a változási értéket kell megadnunk.
 
 \begin{itemize}
-\item[\smiley] Könnyedén használható egy elosztott
-architektúráju rendszerben számlálók vezetésére. 
-\item[\smiley] Helyes mükődése alaposan kitesztelt, biztosított; még
-szélsőséges esetekben is.
+\item[\smiley] Működik elosztott rendszerekbe.
 \item[\frownie] A Cassandra szerverek órái szinkronban kell, hogy legyenek a
 helyes működéshez.
-\item[\frownie] A számláló frissitésére (íráskor) elégséges egyetlen parancs.
-Mivel a rendszer a számláló adat mezőket a klaszteren keresztül konzisztens
-formába kell tartania, a háttérben egy globális olvasási művelet is
-végre fog hajtódni.
+\item[\frownie] Íráskor elégséges az egy írási parancs, de mivel a rendszer a
+számlálókat konzisztensnek kell, hogy tartsa a háttérben egy globális olvasási
+művelet is végre fog hajtódni.
 \end{itemize}
 
 \paragraph{Szuper oszlopok}
-Ezek egy extra absztrakciós szintet vezetnek be, az oszlop és az oszlopcsalád
-közzé. Sajnos csak kis oszlop szám mellett működik hatékonyan. Ezért a
-legújabb dokumentáció már helyettük az összetett oszlopok használatát ajánlja.
-Nem kizárt, hogy a jövőben e típust megszüntetik.
+Ezek egy extra absztrakciós szintet vezetnek be, az oszlop és az oszlop család
+közzé. Sajnos csak kis oszlop szám mellet működik hatékonyan ezért helyettük az
+összetett oszlopok használata ajánlott.
 
 \subsection{Adat típusok}
 Típusa lehet az oszlop értékének (érvényesítő) és az oszlop nevének
 (komparátor).
 
 \begin{description}
-  \item[Érvényesítő] Meghatározza, hogy az értéket be lehet szúrni vagy
-  sem a megadott oszlopba. Bármikor újra definiálható.
-  \item[Komparátor] Meghatározza a megadott oszlop név helyességét
-  (főleg dinamikus oszlopcsalád esetében érdekes). Az oszlopcsaládon belül az
-  oszlopok eszerint kerülnek rendezésre. Definiálás után többet nem változtató
-  meg, tehát gondoljuk meg alaposan, hogy mit választunk.
+  \item[Érvényesítő] Meghatározza, hogy az érték beszúrható e vagy sem ebbe az
+  oszlopba. Bármikor újra definiálható.
+  \item[Komparátor] Meghatározza, hogy az oszlop név helyes e (dinamikus
+  oszlopcsalád esetében) és az oszlop családban az oszlopok eszerint kerülnek
+  rendezésre. Definiálás után többet nem változtató meg, tehát gondoljuk meg
+  alaposan, hogy mit választunk.
 \end{description}
 
 \subsection{Oszlopcsalád tervezési tanácsok}
 Kezdjük azzal, hogy megfogalmazzuk, hogy milyen információk érdekelnek.
 Gondoljuk el, hogy hogyan tudjuk ezeket lekérdezni. Minden adat, ami egy
-lekérdezéshez szükséges, tegyük egy oszlopcsaládba. De ne rakjuk mindent egy
-oszlopcsaládba! Ha bizonyos adat többször is eltárolodik az nem gond. A
+lekérdezéshez szükséges tegyük egy oszlop családba, de ne rakjuk mindent egy
+oszlop családba. Ha egyes adatott többször is eltárolunk az nem gond, a
 Cassandra nézőpontjából a tárhely olcsó. Cserébe gyors lekérdezéseket kapunk.
 
 Gondoljuk meg, ha szükségünk van generált egyedi azonosítóra, avagy az
@@ -964,7 +956,7 @@ kulcsához. Két kulcs összehasonlítása bájt szinten történik, az első k�
 bájtnál az összehasonlítás leáll. Így a sor kulcsa a relációs adatbázisokban már
 megismert fő indexként viselkednek.
 
-Az oszlopok továbbá oszlopcsaládba csoportosíthatók. Szerepük, hogy rengeteg
+Az oszlopok továbbá oszlop családba csoportosíthatók. Szerepük, hogy rengeteg
 HBase által szolgáltatott funkció oszlopcsalád szinten konfigurálható. Ilyen
 például az alkalmazott sűrítési metódus. De például az oszlopcsalád oszlopai
 mindig ugyanazon fájlba tárolódnak, így az oszlopcsaládok elvégzett lekérdezés
@@ -979,7 +971,7 @@ blokkot és egy, amely az index szerint a következő sort. Az index blokk viszo
 bekerül a memóriába ekkor és a következő lekérdezésekkor már csak a sort kell
 beolvasnunk.
 
-Az oszlopcsaládokra igaz, hogy:
+Az oszlop családokra igaz, hogy:
 \begin{itemize}
   \item[\smiley] A család belsejében az oszlop számra nincs korlát.
   \item[\neutranie] Struktúrája \emph{család:minősítő} alakú.
@@ -995,7 +987,7 @@ felhasználó alkalmazás feladata. Egy HBase adat elérési útvonalát megadha
 mint:
 
 \begin{displaymath}
-(\text{Tábla}, \text{Sor Kulcs}, \text{oszlopcsalád}, \text{Oszlop}
+(\text{Tábla}, \text{Sor Kulcs}, \text{Oszlop család}, \text{Oszlop}
 \text{\emph{,Idő bélyeg}}) \mapsto \text{Érték}
 \end{displaymath}
 

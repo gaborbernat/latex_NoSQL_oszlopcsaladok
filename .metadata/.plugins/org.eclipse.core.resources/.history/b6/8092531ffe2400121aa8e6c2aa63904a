@@ -18,7 +18,6 @@
 \usepackage		 {tikz	  }% Latex drawn figures
 \usetikzlibrary	 {matrix  }
 \usepackage        {scalefnt }% Scale the latex drawn figure elements
-\usepackage[pdf]{pstricks}
 
 % The csquotes should be used with bable to help with the references formating 
 \usepackage[style=english]{csquotes} 
@@ -484,10 +483,9 @@ hol tároljuk el, hogy később könnyedén megkapjuk? A helyzetet ábrázolja
 \caption{Adat halmaz tárolása klaszter felett}
 \centering
 \label{fig:WhereToStore}
-%\includegraphics[width=0.9\textwidth]{./kepek/adat_klaszter.png}
-\def\svgwidth{\columnwidth}
-\input{./kepek/adat_klaszter.pdf_tex}
+\includegraphics[width=0.5\textwidth]{./kepek/adat_tarol.png}
 \end{figure}
+	
 
 A Cassandra válassza erre az \emph{adat gyűrű}. Ennek egy sematikus felépítését
 \aref{fig:CassandraDataRing} ábra szemlélteti. Minden adat egységnek van egy sor
@@ -840,47 +838,41 @@ $8$ bájt merevlemez és memória költséggel jár.
 \paragraph{Számláló oszlopok}
 
 Egy számláló oszlop speciális oszlopcsaládot igényel, e miatt gyakorlatilag
-saját oszlopcsaládot kell létrehozni. Ellenben, amint ez megtörtént, egy--egy
-számláló érték frissítésére, csupán a változási értéket kell megadnunk. A
-számláló oszlopokra igaz, hogy:
+saját oszlopcsaládot kell létrehozni. Ellenben, amint ez megtörtént egy--egy
+számláló érték frissítésére csupán a változási értéket kell megadnunk.
 
 \begin{itemize}
-\item[\smiley] Könnyedén használható egy elosztott
-architektúráju rendszerben számlálók vezetésére. 
-\item[\smiley] Helyes mükődése alaposan kitesztelt, biztosított; még
-szélsőséges esetekben is.
+\item[\smiley] Működik elosztott rendszerekbe.
 \item[\frownie] A Cassandra szerverek órái szinkronban kell, hogy legyenek a
 helyes működéshez.
-\item[\frownie] A számláló frissitésére (íráskor) elégséges egyetlen parancs.
-Mivel a rendszer a számláló adat mezőket a klaszteren keresztül konzisztens
-formába kell tartania, a háttérben egy globális olvasási művelet is
-végre fog hajtódni.
+\item[\frownie] Íráskor elégséges az egy írási parancs, de mivel a rendszer a
+számlálókat konzisztensnek kell, hogy tartsa a háttérben egy globális olvasási
+művelet is végre fog hajtódni.
 \end{itemize}
 
 \paragraph{Szuper oszlopok}
 Ezek egy extra absztrakciós szintet vezetnek be, az oszlop és az oszlopcsalád
-közzé. Sajnos csak kis oszlop szám mellett működik hatékonyan. Ezért a
-legújabb dokumentáció már helyettük az összetett oszlopok használatát ajánlja.
-Nem kizárt, hogy a jövőben e típust megszüntetik.
+közzé. Sajnos csak kis oszlop szám mellett működik hatékonyan ezért helyettük az
+összetett oszlopok használata ajánlott.
 
 \subsection{Adat típusok}
 Típusa lehet az oszlop értékének (érvényesítő) és az oszlop nevének
 (komparátor).
 
 \begin{description}
-  \item[Érvényesítő] Meghatározza, hogy az értéket be lehet szúrni vagy
-  sem a megadott oszlopba. Bármikor újra definiálható.
-  \item[Komparátor] Meghatározza a megadott oszlop név helyességét
-  (főleg dinamikus oszlopcsalád esetében érdekes). Az oszlopcsaládon belül az
-  oszlopok eszerint kerülnek rendezésre. Definiálás után többet nem változtató
-  meg, tehát gondoljuk meg alaposan, hogy mit választunk.
+  \item[Érvényesítő] Meghatározza, hogy az érték beszúrható e vagy sem ebbe az
+  oszlopba. Bármikor újra definiálható.
+  \item[Komparátor] Meghatározza, hogy az oszlop név helyes e (dinamikus
+  oszlopcsalád esetében) és az oszlopcsaládban az oszlopok eszerint kerülnek
+  rendezésre. Definiálás után többet nem változtató meg, tehát gondoljuk meg
+  alaposan, hogy mit választunk.
 \end{description}
 
 \subsection{Oszlopcsalád tervezési tanácsok}
 Kezdjük azzal, hogy megfogalmazzuk, hogy milyen információk érdekelnek.
 Gondoljuk el, hogy hogyan tudjuk ezeket lekérdezni. Minden adat, ami egy
-lekérdezéshez szükséges, tegyük egy oszlopcsaládba. De ne rakjuk mindent egy
-oszlopcsaládba! Ha bizonyos adat többször is eltárolodik az nem gond. A
+lekérdezéshez szükséges tegyük egy oszlopcsaládba, de ne rakjuk mindent egy
+oszlopcsaládba. Ha egyes adatott többször is eltárolunk az nem gond, a
 Cassandra nézőpontjából a tárhely olcsó. Cserébe gyors lekérdezéseket kapunk.
 
 Gondoljuk meg, ha szükségünk van generált egyedi azonosítóra, avagy az

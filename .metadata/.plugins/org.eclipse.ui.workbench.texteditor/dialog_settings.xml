@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="318" key="DIALOG_WIDTH"/>
-		<item value="112" key="DIALOG_Y_ORIGIN"/>
-		<item value="530" key="DIALOG_X_ORIGIN"/>
-		<item value="412" key="DIALOG_HEIGHT"/>
+		<item value="330" key="DIALOG_WIDTH"/>
+		<item value="92" key="DIALOG_Y_ORIGIN"/>
+		<item value="1036" key="DIALOG_X_ORIGIN"/>
+		<item value="416" key="DIALOG_HEIGHT"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
@@ -13,16 +13,20 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="30" key="selection"/>
+		<item value="adat_" key="selection"/>
 		<list key="findhistory">
-			<item value="30"/>
-			<item value="fE"/>
-			<item value="Monet"/>
-			<item value="monet"/>
-			<item value="regionServer"/>
-			<item value="regionserver"/>
+			<item value="adat_"/>
+			<item value="adat"/>
+			<item value="adat_tar"/>
+			<item value="adat_t"/>
+			<item value="megtörtént"/>
+			<item value="mellet"/>
+			<item value="oszlop"/>
+			<item value="oszlop család"/>
 		</list>
 		<list key="replacehistory">
+			<item value="mellett"/>
+			<item value="oszlopcsalád"/>
 		</list>
 	</section>
 </section>

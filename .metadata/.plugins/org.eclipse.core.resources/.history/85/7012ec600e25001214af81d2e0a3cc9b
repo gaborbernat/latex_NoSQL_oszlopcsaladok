@@ -485,9 +485,9 @@ hol tároljuk el, hogy később könnyedén megkapjuk? A helyzetet ábrázolja
 \centering
 \label{fig:WhereToStore}
 %\includegraphics[width=0.9\textwidth]{./kepek/adat_klaszter.png}
-\def\svgwidth{\columnwidth}
-\input{./kepek/adat_klaszter.pdf_tex}
+\input{./kepek/adat_klaszter.tex}
 \end{figure}
+	
 
 A Cassandra válassza erre az \emph{adat gyűrű}. Ennek egy sematikus felépítését
 \aref{fig:CassandraDataRing} ábra szemlélteti. Minden adat egységnek van egy sor

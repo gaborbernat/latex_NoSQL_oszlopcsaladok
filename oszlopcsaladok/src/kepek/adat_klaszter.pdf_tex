@@ -1,0 +1,67 @@
+%% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'adat_klaszter.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{792bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.77272727)%
+    \fontsize{5pt}{7pt}\selectfont
+    \put(0,0){\includegraphics[width=\unitlength]{./kepek/adat_klaszter.pdf}}%
+    \put(0.16034091,0.17405303){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ADAT TÁROLÓ KLASZTER}}}%
+    \put(0.4982702,0.19040407){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ELTÁROLT ADAT FELHŐ}}}%
+    \put(0.54081818,0.59212118){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\shortstack{ÚJ ADAT \\ EGYSÉG}}}}%
+    \put(0.32791666,0.57184345){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{??? – Hova helyezzük el?}}}%
+    \put(0.32824495,0.6219697){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{??? – Hova helyezzük el?}}}%
+    \put(0.32369949,0.66742677){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{??? – Hova helyezzük el?}}}%
+    \put(0.32885606,0.48068179){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{TÁROLÁS}}}%
+    \put(0.32060606,0.37770199){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{TÁROLÁS}}}%
+    \put(0.32700758,0.25994946){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{TÁROLÁS}}}%
+    \put(0.28938636,0.3410745){\color[rgb]{0.91764706,0.43921569,0.05098039}\makebox(0,0)[lb]{\smash{REPLIKÁCIÓ}}}%
+    \put(0.28811616,0.2357437){\color[rgb]{0.91764706,0.43921569,0.05098039}\makebox(0,0)[lb]{\smash{REPLIKÁCIÓ}}}%
+    \put(0.28908586,0.46386113){\color[rgb]{0.91764706,0.43921569,0.05098039}\makebox(0,0)[lb]{\smash{REPLIKÁCIÓ}}}%
+  \end{picture}%
+\endgroup%
