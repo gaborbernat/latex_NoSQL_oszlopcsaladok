@@ -1,6 +1,6 @@
 % !TeX encoding = UTF-8 
 % !TeX spellcheck =hu_HU
-\hypersetup{pageanchor=false}
+
 \begin{titlepage}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \begin{center}
@@ -37,4 +37,3 @@
 {\large \today}
 \end{center}
 \end{titlepage}
-\hypersetup{pageanchor=false}

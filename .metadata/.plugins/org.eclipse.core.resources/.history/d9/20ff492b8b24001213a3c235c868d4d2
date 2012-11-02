@@ -39,7 +39,7 @@ backref=false]{biblatex} \DeclareSourcemap{ % Unfortunetly the
 \definecolor{bgSrc}{rgb}{0.95,0.95,0.95}
 
 \usepackage		   {hyperref}% - Add links between the doc
-\usepackage[all]{hypcap}   %Let the links point above figures and not below
+\usepackage[all]{hypcap}
 \usepackage[numbered,
 			  open, 
 			  openlevel=2,
@@ -60,7 +60,6 @@ backref=false]{biblatex} \DeclareSourcemap{ % Unfortunetly the
 
 \listoftables
 
-\hypersetup{pageanchor=false}
 \begin{abstract}
 A Google a $2000$--es években azt tapasztalta, hogy nagy adat mennyiségek
 hatékony eltárolására és feldolgozására a relációs adatbázisok már küszködnek.
@@ -96,13 +95,12 @@ pontot. Napjainkra mindkettő már ipari standarddá vált és oly cégek haszn�
 szolgáltatásaik üzemeltetésére, mint a Facebook avagy a Twitter.
 
 Jelen beszámoló indít a hagyományos oszlopcsaládok rövid ismertetésével, majd
-bemutatja, hogy mit is jelent általánosan egy ,,széles’’ oszlopcsalád.
-\mbox{Egy--egy} fejezet erejéig végül elmerül a Cassandra és a HBase adat modell
-és adat partíciós stratégiáinak ismertetésére. Az irat fő célja, hogy egy jó
-áttekintő képet nyújtson arról, hogy mikor érdemes és szükséges használni őket,
-és nem utolsó sorban melyik implementációt kapjuk le a polcról ilyenkor.
+bemutatja, hogy mit is jelent általánosan egy ,,széles’’ oszlopcsalád. Ezután
+\mbox{egy--egy} fejezet erejéig elmerül a Cassandra és a HBase adat modell és
+adat partíciós stratégiáinak ismertetésére. Az irat fő célja, hogy egy jó áttekintő
+képet nyújtson arról, hogy mikor érdemes és szükséges használni őket, és nem
+utolsó sorban melyik implementációt kapjuk le a polcról ilyenkor.
 \end{abstract}
-\hypersetup{pageanchor=true}
 
 \chapter{Oszlopcsaládok}
 
@@ -1087,40 +1085,8 @@ szerveren helyezkedik el a rendszer erősen konzisztens.
 
 \chapter{Összegzés}
 
-A szerző reménye, hogy e jegyzet oldalainak sikerült az olvasó részére egy
-alapos betekintést szolgáltatni az oszlopcsaládokba. Habár ezen irat magában
-kevés lesz ahhoz, hogy a Cassandra vagy HBase rendszert az olvasó használni
-tudja, jó képet szolgáltat ezek struktúrájáról.
-
-A nagy adat világa itt van. Ezt tényként lehet kezelni. A szoftver mérnök
-feladata meghatározni, hogy hogyan tároljuk el e napról--napra növekvő
-adatmennyiséget. Választhatunk akár relációs, NoSQL, vagy esetleg NewSQL
-megoldást is feladatunkra. A fontos, hogy a feladathoz mérten tegyük meg az
-adattároló választást és minden körülmény paraméterét figyelembe vegyük
-ilyenkor.
-
-A NoSQL alapú adatbázisok akkor válnak igazán erősé, ha nagy mennyiségű, esetleg
-relatív strukturálatlan, avagy gyakran változó struktúrájú adat érkezik a
-rendszerbe. Ilyenkor egy skálázható rendszert, biztosit, amely könnyedén ki tud
-használni egy szerverpark tároló és számítási képességét, ha az számunkra
-elérhető. A kulcsozó itt a többség, s nem az erősség. Sok, akkár gyengébb gépre
-épitűnk, s nem pár csúcs teljesítményűre.  
-
-Az ipart követve úgy a Hadoop (HBase), mint a Cassandra még hosszú éveken át el
-fog kísérni. A Cassandra előnye a könnyebb rendszer felállítás, menedzselés és
-SQL világra inkább emlékeztető CQL nyelvezet. Ennek megfelelően gyorsan teret
-hódit a kisebb vállalkozásoknál. A Hadoop (HBase) előnye, hogy az
-adatfeldolgozást delegálhatjuk az adatot tároló gépekre, a MapReduce rendszer
-segítségével. Az elmúlt években úgy az Amazon, mint a Microsoft is Hadoop-ot
-használ az Amazon Elastic Compute Cloude, illetve Microsoft Azure
-felhőszolgáltatásaikba.
-
-Végezetül két tanáccsal szolgálnék, a bátor felhasználónak, aki belevág e
-rendszerek használatába; két dolgot tartson szem előtt: új gondolkodásmód és
-fiatalság. Készüljünk fel, hogy a dolgok nem úgy működnek, mint ahogy azt
-megszoktuk az SQL világban. E rendszerek fiatalsága miatt meg e rendszerrekre
-jellemző a gyakori változás; pozitív értelembe mikor új funkcióval bővülnek és
-negatívan, amikor egy újabb verzió megtöri a kompatibilitást az előbbivel.
+A szerkesztő reménye, hogy a fenti oldalaknak sikerült egy áttekintést
+szolgáltatni az oszlopcsaládok.
 
 \printbibliography
 

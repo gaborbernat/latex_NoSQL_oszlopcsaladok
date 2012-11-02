@@ -1109,13 +1109,14 @@ elérhető. A kulcsozó itt a többség, s nem az erősség. Sok, akkár gyengé
 Az ipart követve úgy a Hadoop (HBase), mint a Cassandra még hosszú éveken át el
 fog kísérni. A Cassandra előnye a könnyebb rendszer felállítás, menedzselés és
 SQL világra inkább emlékeztető CQL nyelvezet. Ennek megfelelően gyorsan teret
-hódit a kisebb vállalkozásoknál. A Hadoop (HBase) előnye, hogy az
-adatfeldolgozást delegálhatjuk az adatot tároló gépekre, a MapReduce rendszer
-segítségével. Az elmúlt években úgy az Amazon, mint a Microsoft is Hadoop-ot
-használ az Amazon Elastic Compute Cloude, illetve Microsoft Azure
-felhőszolgáltatásaikba.
+hódit a kisebb vállalkozásoknál.
 
-Végezetül két tanáccsal szolgálnék, a bátor felhasználónak, aki belevág e
+A Hadoop (HBase) előnye, hogy az adatfeldolgozást delegálhatjuk az adatot tároló
+gépekre, a MapReduce rendszer segítségével. Az elmúlt években úgy az Amazon,
+mint a Microsoft is Hadoop-ot használ az Amazon Elastic Compute Cloude, illetve
+Microsoft Azure felhőszolgáltatásaikba.
+
+Végezetül egy tanáccsal szolgálnék, a bátor felhasználónak, aki belevág e
 rendszerek használatába; két dolgot tartson szem előtt: új gondolkodásmód és
 fiatalság. Készüljünk fel, hogy a dolgok nem úgy működnek, mint ahogy azt
 megszoktuk az SQL világban. E rendszerek fiatalsága miatt meg e rendszerrekre
