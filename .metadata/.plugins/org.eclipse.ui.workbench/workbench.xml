@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="35" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -28,31 +28,15 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="net.sourceforge.texlipse.TexEditor" name="main.tex" partName="main.tex" path="/home/bernat/eclipse/latex/advanced_db/oszlopcsaladok/src/main.tex" title="main.tex" tooltip="oszlopcsaladok/src/main.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/oszlopcsaladok/src/main.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="378" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="cimlap.tex" partName="cimlap.tex" path="/home/bernat/eclipse/latex/advanced_db/oszlopcsaladok/src/cimlap.tex" title="cimlap.tex" tooltip="oszlopcsaladok/src/cimlap.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/oszlopcsaladok/src/cimlap.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="351" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="main.aux" partName="main.aux" path="/home/bernat/eclipse/latex/advanced_db/oszlopcsaladok/tmp/main.aux" title="main.aux" tooltip="oszlopcsaladok/tmp/main.aux" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/oszlopcsaladok/tmp/main.aux"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="net.sourceforge.texlipse.TableView" partName="LaTeX Table View"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress">
 <viewState/>
@@ -60,10 +44,6 @@
 <view id="net.sourceforge.texlipse.FullOutline" partName="Full Latex Outline"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="211" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="793"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -92,7 +72,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="net.sourceforge.texlipse.TexEditor" activePerspective="net.sourceforge.texlipse.TexlipsePerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="net.sourceforge.texlipse.TexlipsePerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -250,163 +230,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/oszlopcsaladok/src/main.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/oszlopcsaladok/tmp/main.aux"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/oszlopcsaladok/src/main.aux"/>
-</editors>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.tex" index="0">
-<position info="not_deleted" x="25768" y="0"/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.tex" index="0">
-<position info="not_deleted" x="25795" y="0"/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.aux" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.aux" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item active="true" historyLabel="main.aux" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>

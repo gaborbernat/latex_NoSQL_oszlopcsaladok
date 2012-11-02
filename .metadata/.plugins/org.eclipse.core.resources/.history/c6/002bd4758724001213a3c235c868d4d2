@@ -4,7 +4,8 @@
 \usepackage[T1]    {fontenc }% Allow accented output charachters
 \usepackage[utf8]  {inputenc}% Allow accented input charachters 
 \usepackage        {lmodern }% Modern output font	
-\usepackage[english,magyar]{babel   }% Set document language to use
+\def\magyarOptions{suggestions=no}
+\usepackage[magyar]{babel}	   % Set document language to use
 \usepackage		 {amsmath}%Math mode additions
 \usepackage		 {floatrow}% Append additional information to images (source)
 
@@ -17,9 +18,6 @@
 \usepackage		 {tikz	  }% Latex drawn figures
 \usetikzlibrary	 {matrix  }
 \usepackage        {scalefnt }% Scale the latex drawn figure elements
-
-\usepackage		   {hyperref}% - Add links between the doc elements
-\usepackage[numbered]{bookmark}% - We want numbers 
 
 % The csquotes should be used with bable to help with the references formating 
 \usepackage[style=english]{csquotes} 
@@ -40,12 +38,17 @@ backref=false]{biblatex} \DeclareSourcemap{ % Unfortunetly the
 % Background highlight color used for the source code and the tables
 \definecolor{bgSrc}{rgb}{0.95,0.95,0.95}
 
+\usepackage		   {hyperref}% - Add links between the doc
+\usepackage[all]{hypcap}
+\usepackage[numbered,
+			  open, 
+			  openlevel=2,
+			  atend]{bookmark}% - We want numbers
+
 \begin{document}
 
 % A címlap
 \input{cimlap.tex}
-
-\hypersetup{pageanchor=false}
 \begin{abstract}
 A Google a $2000$--es években azt tapasztalta, hogy nagy adat mennyiségek
 hatékony eltárolására és feldolgozására a relációs adatbázisok már küszködnek.
@@ -87,13 +90,6 @@ partíciós stratégiáinak ismertetésére. Az irat fő célja, hogy egy jó á
 képet nyújtson arról, hogy mikor érdemes és szükséges használni őket, és nem
 utolsó sorban melyik implementációt kapjuk le a polcról ilyenkor.
 \end{abstract}
-\hypersetup{pageanchor=true}	
-
-\tableofcontents
-
-\listoffigures
-
-\listoftables
 
 \chapter{Oszlopcsaládok}
 
@@ -105,15 +101,14 @@ eltárolva. Tehát az adott bejegyzés attribútumai többnyire egymást követv
 helyen lesz eltárolva. Ezzel szemben az oszlop orientált megalkotásban az
 objektum példányok attribútumai vannak egy helyre gyűjtve.
 
-A 20.--ik század folyamán a gyakorlatban a sor orientált adatbázisok terjedtek
-el.
-Az oszlop orientált megközelítés erőssége a sor orientálttal szemben az, hogy az
-aggregációs műveletek rövidebb idő költséggel rendelkeznek. Ennek oka, hogy
-amennyiben csupán egy (vagy kevés) attribútum szerint akarunk elvégezni egy
-műveletet, akkor nem kell a lassú merevlemezről beolvasnunk a tábla
-bejegyzéseinek többi attribútumát is, mivel az érdekelt információ halmazt
-szekvenciálisan egy helyen tároljuk. Ilyen műveletek főleg az OLAP rendszerekben
-gyakori.
+\pdfbookmark[3]{Szia}{Mari} A 20.--ik század folyamán a gyakorlatban a sor
+orientált adatbázisok terjedtek el.Az oszlop orientált megközelítés erőssége a
+sor orientálttal szemben az, hogy az aggregációs műveletek rövidebb idő
+költséggel rendelkeznek. Ennek oka, hogy amennyiben csupán egy (vagy kevés)
+attribútum szerint akarunk elvégezni egy műveletet, akkor nem kell a lassú
+merevlemezről beolvasnunk a tábla bejegyzéseinek többi attribútumát is, mivel az
+érdekelt információ halmazt szekvenciálisan egy helyen tároljuk. Ilyen műveletek
+főleg az OLAP rendszerekben gyakori.
 
 \section{Oszlopba avagy sorba rendezve?} \label{sec:oszlop_relacios}
 
@@ -225,8 +220,8 @@ $2008$--ban a Cassandra oszlop alapú NoSQL adatbázisukat.
 
 \begin{figure}[ht]
 \caption{A NoSQL világ felépítése}
-\centering
 \label{fig:NOSQLWorld}
+\centering
 \includegraphics[width=0.5\textwidth]{./kepek/Figures-Aslett2_web.jpg}
 \floatfoot{Forrás: \url{http://blogs.the451group.com/information_management/2011/04/}}
 \end{figure}
@@ -488,15 +483,11 @@ a legmagasabb hash értéket kapó gépet a legkisebb értékű követi.
 
 \begin{figure}[ht]
 \caption{A Cassandra adat gyűrű}
+\label{fig:CassandraDataRing}
 \centering
-\label{fig:CassandraDataRingX}
-\includegraphics[width=0.5\textwidth]{./kepek/cassandra_adat_gyuru.png}
-\end{figure}
-
-\begin{figure}[ht]
 \begin{tikzpicture}[scale=1.7]
  \tikzset{
-  cassandraNode/.style={circle,green,fill=green,minimum widht=0.15},
+  cassandraNode/.style={circle,green,fill=green,minimum width=0.15},
   cassandraToken/.style={rectangle, rounded corners, red, fill=green}
   }
   %\draw[help lines] (-3,-3) grid (3,3);
@@ -522,8 +513,10 @@ a legmagasabb hash értéket kapó gépet a legkisebb értékű követi.
   \draw[-] (rR) -- (cR);
   \draw[-] (rB) -- (cB);
   
-  \node[scale=0.6,circle, green, red, fill=yellow] (cE) at (1.73, -1) {30};
-  
+  \node[circle, green, red, fill=yellow, minimum width=.1] (cE) at
+  (1.73, -1) {};
+  \node[] (lE) at (2.2, - 1.5)  {30-as sor}; 
+  \draw[<-] (cE) -- (lE);
   \draw[->, densely dashed] (cE) .. controls (1, -2.5) .. (cB) node
   [draw=none,midway,below=0.1] {Replikáció};
   % Legend
@@ -537,7 +530,6 @@ a legmagasabb hash értéket kapó gépet a legkisebb értékű követi.
   (-2, -1.9) node [black,draw=none,midway,below=0.1] {írány a gyűrűn};
    
 \end{tikzpicture} 
-\caption{Régiók és régió szerverek}\label{fig:CassandraDataRing}
 \end{figure}
 
 Egy adott gép azon adat bejegyzéseket tárolja, amik az ő és előtte levő hash
@@ -1079,6 +1071,17 @@ A sorokon végzett művelet egységnyi idő alatt történik meg (atomikus). Az 
 replikációs feladata delegálva van a HBase által használt elosztott fájl
 rendszernek, mint például a HDFS. Mivel egy sor egy időben csak egy fizikai
 szerveren helyezkedik el a rendszer erősen konzisztens.
+
+\chapter{Összegzés}
+
+A szerkesztő reménye, hogy a fenti oldalaknak sikerült egy áttekintést
+szolgáltatni az oszlopcsaládok.
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
 
 \printbibliography
 

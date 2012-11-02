@@ -4,7 +4,8 @@
 \usepackage[T1]    {fontenc }% Allow accented output charachters
 \usepackage[utf8]  {inputenc}% Allow accented input charachters 
 \usepackage        {lmodern }% Modern output font	
-\usepackage[english,magyar]{babel   }% Set document language to use
+\def\magyarOptions{suggestions=no}
+\usepackage[magyar]{babel}	   % Set document language to use
 \usepackage		 {amsmath}%Math mode additions
 \usepackage		 {floatrow}% Append additional information to images (source)
 
@@ -48,6 +49,13 @@ backref=false]{biblatex} \DeclareSourcemap{ % Unfortunetly the
 
 % A címlap
 \input{cimlap.tex}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
 \begin{abstract}
 A Google a $2000$--es években azt tapasztalta, hogy nagy adat mennyiségek
 hatékony eltárolására és feldolgozására a relációs adatbázisok már küszködnek.
@@ -100,14 +108,14 @@ eltárolva. Tehát az adott bejegyzés attribútumai többnyire egymást követv
 helyen lesz eltárolva. Ezzel szemben az oszlop orientált megalkotásban az
 objektum példányok attribútumai vannak egy helyre gyűjtve.
 
-\pdfbookmark[3]{Szia}{Mari} A 20.--ik század folyamán a gyakorlatban a sor
-orientált adatbázisok terjedtek el.Az oszlop orientált megközelítés erőssége a
-sor orientálttal szemben az, hogy az aggregációs műveletek rövidebb idő
-költséggel rendelkeznek. Ennek oka, hogy amennyiben csupán egy (vagy kevés)
-attribútum szerint akarunk elvégezni egy műveletet, akkor nem kell a lassú
-merevlemezről beolvasnunk a tábla bejegyzéseinek többi attribútumát is, mivel az
-érdekelt információ halmazt szekvenciálisan egy helyen tároljuk. Ilyen műveletek
-főleg az OLAP rendszerekben gyakori.
+A 20.--ik század folyamán a gyakorlatban a sor orientált adatbázisok terjedtek
+el.Az oszlop orientált megközelítés erőssége a sor orientálttal szemben az, hogy
+az aggregációs műveletek rövidebb idő költséggel rendelkeznek. Ennek oka, hogy
+amennyiben csupán egy (vagy kevés) attribútum szerint akarunk elvégezni egy
+műveletet, akkor nem kell a lassú merevlemezről beolvasnunk a tábla
+bejegyzéseinek többi attribútumát is, mivel az érdekelt információ halmazt
+szekvenciálisan egy helyen tároljuk. Ilyen műveletek főleg az OLAP rendszerekben
+gyakori.
 
 \section{Oszlopba avagy sorba rendezve?} \label{sec:oszlop_relacios}
 
@@ -1075,12 +1083,6 @@ szerveren helyezkedik el a rendszer erősen konzisztens.
 
 A szerkesztő reménye, hogy a fenti oldalaknak sikerült egy áttekintést
 szolgáltatni az oszlopcsaládok.
-
-\tableofcontents
-
-\listoffigures
-
-\listoftables
 
 \printbibliography
 
